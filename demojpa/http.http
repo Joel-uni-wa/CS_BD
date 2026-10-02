@@ -1,18 +1,46 @@
+### Registrar Pedido
+POST https://humble-space-computing-machine-q7pxjppw65xph46jp-8080.app.github.dev/producto/marca/1001/nuevo
+Content-Type: application/json
+
+{
+ "nombre":"Joel",
+"descripcion": "Joel Choquepata Guarniz",
+	"precio":50,
+	"stock":3
+}
+
+### Ajustar stock
+POST https://humble-space-computing-machine-q7pxjppw65xph46jp-8080.app.github.dev/producto/stock/ajuste
+Content-Type: application/json
+
+{
+  "idProducto": 1067,
+  "stock": 3
+}
+
+### Consultar producto por id
+GET https://humble-space-computing-machine-q7pxjppw65xph46jp-8080.app.github.dev/producto/1007
+
 ### Registrar pedido
-POST https://improved-parakeet-97w6pvjgp4jvcrpg-8080.app.github.dev/pedido/nuevo
+POST https://humble-space-computing-machine-q7pxjppw65xph46jp-8080.app.github.dev/pedido/nuevo
 Content-Type: application/json
 
 {
  "items":[
    {
-     "idProducto": 1004,
-     "cantidad": 2,
-     "precioUnitario":3000
-   },
-   {
-     "idProducto": 1005,
+     "idProducto": 1067,
      "cantidad": 3,
      "precioUnitario":50
    }
  ]
+}
+### Registrar producto
+POST https://humble-space-computing-machine-q7pxjppw65xph46jp-8080.app.github.dev/producto/marca/1001/nuevo
+Content-Type: application/json
+
+{
+ "nombre":"Joel",
+"descripcion": "Joel Choquepata Guarniz",
+	"precio":50,
+	"stock":3
 }
